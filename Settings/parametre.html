@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Parametre</title>
+    <link rel="stylesheet" href="parametre.css">
+    <script>
+        function Volume() {
+    window.location.href = "Volume_Sonore/volume.html";
+        }
+        function Key() {
+            window.location.href = "Key_Configuration/key.html";
+        }
+        function toggleFullScreen() {
+            const board = document.querySelector(".board");
+            if (!document.fullscreenElement) {
+              board
+                .requestFullscreen()
+                .then(() => {
+                  board.style.width = "100vw";
+                  board.style.height = "100vh";
+                  board.style.display = "grid";
+                  board.style.gridTemplateColumns = "repeat(32, 1fr)";
+                  board.style.gridTemplateRows = "repeat(32, 1fr)";
+                })
+                .catch((err) => {
+                  console.log(
+                    `Erreur lors du passage en plein écran: ${err.message}`
+                  );
+                });
+            } else {
+              document.exitFullscreen();
+            }
+          }
+    </script>
+</head>
+<body class="background-parametre">
+    <div class="container">
+        <h1>Menu des paramètres</h1>
+        <button class="btn" onclick="Volume()">Volume</button>
+        <button class="btn btn-danger" onclick="Key()">Configuration touches</button>
+        <button class="btn" onclick="toggleFullscreen()">Plein écran</button>
+    </div>
+</body>
+</html>

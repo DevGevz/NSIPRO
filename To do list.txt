@@ -1,0 +1,71 @@
+Projet NSI To_do_list
+
+Overview :
+-Jeu simpliste en 2D 
+-But du jeu : marchand
+-Zone à construire (but à atteindre)
+-Vision du dessus
+-----------------------------------------------------------------------------
+Piste d'avancement à voir : djangoproject.com
+-----------------------------------------------------------------------------
+Cahier des charges:
+
+Création fondation/base :
+    -Configuration Arborescense
+        ->App
+            ->ChoiceCharacter
+            ->Levels
+            ->QuitPage
+    -Configurer pour 2 joueurs (voir 4 ?) (même clavier) (si temps -> sans filans fil)
+        ->Stockage local pour chaque joueurs
+            ->Assignement des classes
+    -Asset Folder
+        ->Map 2D
+        ->Generated Monsters
+        ->Coins
+        ->Items
+        ->Characters Sprite
+    -Code déplacement personnage sur quadrillage (L*l)
+        -> 2 dimensions : coordonnée "x" & "y"
+        -> short cooldown pour ne pas se téléporter mais pouvoir se déplacer (!= [Ordre:ns])
+    -Actualisation en boucle lors d'interation (!=écran fixe/statique)
+    -Sélection de classe -> création des aptitudes et caractéristiques des classes
+        ->Ne pas permettre au joueur de sélectionner plusieurs classes
+
+Création de boutons :
+    -Bouton Start/Continue/Sélection : Fonction qui transitionne l'interface graphique
+    -Bouton Retry : Fonction qui redémarre la map à une sauvegarde
+    -Bouton Settings : Fonction de paramètrage (volume sonore, dimension écran, etc)
+        ->Assignement des touches
+                ->Assignement touches de déplacement et d'attaque
+    -Bouton Quite : Fonction pour fermer l'interface
+
+Création de pages:
+    -Menu principale
+    -Menu de sortie
+    -Menu sélection de classe
+    -Création de la map
+
+Création de mécaniques :
+    -Asset à faire (monstre, perso, item, etc...)
+    -Game_Over Screen
+    -Statistiques des entitées
+        -> HP & Damages
+    -Création de la zone marchande
+        -> attribuer valeur aux blocs
+            -> ajout blocs à l
+    -Système de trade
+    -Création de la bar d'objectif de construction (0-100%)
+        ->affiche "victoire"
+        ->passe au niveau suivant
+    -Création de la bar de HP
+        ->lorsque tout les HP de tout les joueurs sont à 0 -> Game_Over 
+    -Ajout d'un compteur à chaque personnage pour les objets collecter
+        ->compteur de pièces
+        ->compteur de kill
+    -Définir une frontière que les joueurs ne peuvent pas franchir
+        -> Border Limit : Map and Screen_Frame
+    -Génération de monstres sur la map
+        ->système de drop
+            ->objets et pièces
+        ->développement déplacement "IA" des monstres

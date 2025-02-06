@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* outline: green 1px solid;
+    background: rgb(161, 255, 161); */
+  background: #2e2e2e;
+}
+
+.TextField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #1a1a1a7c;
+  border-radius: 15px;
+  margin-inline: 20px;
+  margin-top: 1vw;
+}
+
+p {
+  background: -webkit-linear-gradient(25deg, black, rgb(255, 0, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+
+.vs {
+  background: -webkit-linear-gradient(25deg, rgb(219, 223, 0), rgb(255, 0, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span {
+  background: -webkit-linear-gradient(
+    25deg,
+    rgb(174, 0, 255),
+    rgb(255, 208, 0)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.board {
+  /* background: url(../bg.png); */
+  min-height: 545px;
+  min-width: 1000px;
+  margin-inline: 120px;
+  margin-top: 2vw;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-template-rows: repeat(32, 17px);
+}
+
+.board p {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.212);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  border-radius: 2px;
+}
+
+.btn-danger {
+  display: flex;
+  margin: 20px 40px 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.233);
+}
+.cell {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.212);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  border-radius: 2px;
+}
+
+.cell.player {
+  background: rgba(255, 0, 0, 0.8); /* Couleur rouge pour le personnage */
+}
+
+
+.cell.player2 {
+  background: rgba(47, 0, 255, 0.8); /* Couleur rouge pour le personnage */
+}

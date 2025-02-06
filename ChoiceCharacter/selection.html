@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Sélection des personnages</title>
+    <link rel="stylesheet" href="selection.css">
+</head>
+<body>
+    <div class="background-selection">
+        <div class="container container1">
+            <h1><span>Joueur 1 :</span> Choisissez votre personnage</h1>
+            <div class="btns">
+                <button class="btn btn-joueur1" onclick="choisirPersonnage('joueur1', 'Guerrier')">Guerrier</button>
+            <button class="btn btn-joueur1" onclick="choisirPersonnage('joueur1', 'Mage')">Mage</button>
+            <button class="btn btn-joueur1" onclick="choisirPersonnage('joueur1', 'Archer')">Archer</button>
+            </div>
+        </div>
+        <div class="container container2">
+            <h1><span>Joueur 2 :</span> Choisissez votre personnage</h1>
+            <div class="btns">
+                <button class="btn btn-joueur2" onclick="choisirPersonnage('joueur2', 'Guerrier')">Guerrier</button>
+            <button class="btn btn-joueur2" onclick="choisirPersonnage('joueur2', 'Mage')">Mage</button>
+            <button class="btn btn-joueur2" onclick="choisirPersonnage('joueur2', 'Archer')">Archer</button>
+            </div>
+        </div>
+        <button class="btn btn-danger" onclick="window.location.href='../index.html'">Retour</button>
+    </div>
+
+    <script src="./selection.js"></script>
+</body>
+</html>

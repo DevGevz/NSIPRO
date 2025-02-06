@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu - Map</title>
+    <link rel="stylesheet" href="./map.css" />
+  </head>
+  <body class="background-map">
+    <div class="container">
+      <p id="message"></p>
+      <div class="board"></div>
+
+      <button class="btn btn-danger" onclick="fermerJeu()">
+        Close the game
+      </button>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+      <source src="C:\Users\Eleve\Desktop\Computer content\Files\Coding\PROJET NSI\App\Resource\Audio\audio1.mp3" type="audio/mp3">
+      Votre navigateur ne prend pas en charge l'élément audio.
+    </audio>
+    
+    <button onclick="toggleAudio()">🔊 Activer/Désactiver le son</button>
+  
+    <script src="./map.js"></script>
+  </body>
+</html>

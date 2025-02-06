@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: green;
+    background: rgba(7, 145, 7, 0.304);
+}
+
+.title{
+    display: flex;
+    margin-inline: auto;
+}
+
+h1{
+    text-align: center;
+
+}
