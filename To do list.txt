@@ -2,9 +2,9 @@ Projet NSI To_do_list
 
 Overview :
 -Jeu simpliste en 2D 
--But du jeu : marchand
--Zone à construire (but à atteindre)
--Vision du dessus
+-But du jeu : développé capacité de trading
+-Zone à construire <=> goal to win
+-Vision du dessus : 90°
 -----------------------------------------------------------------------------
 Piste d'avancement à voir : djangoproject.com
 -----------------------------------------------------------------------------
